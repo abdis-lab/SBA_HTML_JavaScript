@@ -1,4 +1,5 @@
 # HoopSession Web Application
+Website URL (https://abdis-lab.github.io/SBA_HTML_JavaScript/src/template/index.html)
 
 Overview
 HoopSession is a web application designed to help basketball enthusiasts find 
