@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.profile-header {
+    background-color: #0b1f66;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.user-details {
+    text-align: left;
+}
+
+.user-details h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.user-details p {
+    margin: 0;
+    color: #ccc;
+}
+
+.profile-main {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.session-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.session-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.session-table th, .session-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.session-table th {
+    background-color: #0b1f66;
+    color: #fff;
+}
+
+.session-table tbody tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-footer {
+    background-color: #0b1f66;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

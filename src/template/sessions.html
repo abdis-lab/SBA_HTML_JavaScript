@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/session.css">
+    <title>Session's</title>
+
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        form div{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+    </style>
+
+</head>
+<body>
+<header class="header">
+<h1>Session Page</h1>
+</header>
+
+<main class="main-content">
+    <section class="sessions">
+        <div class="sessions-header">
+            <h2>Nearby Sessions</h2>
+            <button id="addSessionBtn" class="add-session-btn">Add Session</button>
+        </div>
+
+        <!-- Display existing sessions in a grid layout -->
+        <div class="session-grid">
+            <div class="session-card">
+                <img src="../images/pexels-pixabay-358042.jpg" alt="Session Image">
+                <div class="session-title">
+                    <h1>Session 1</h1>
+                    <p>Details about Session 1.</p>
+                </div>
+                <div class="session-info">
+                    <span class="session-date">FRI, FEB 24, 3:30 PM PST</span>
+                    <button class="goingToSession">20 Going</button>
+                    <span class="sessionCost">Cost: $10</span>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</main>
+
+<!-- Modal for adding a new session -->
+<div id="addSessionModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Add New Session</h2>
+        <!-- Form for entering session information -->
+        <form id="sessionForm">
+            <div>
+                <label for="sessionName">Session Name:</label>
+                <input type="text" id="sessionName" name="sessionName" required>
+            </div>
+            <div>
+                <label for="sessionDetail">Session Detail</label>
+                <input type="textarea" id="sessionDetail" name="sessionDetail" required>
+            </div>
+            <div>
+                <label for="sessionCost">Session Time</label>
+                <input type="number" name="sessionCost" id="sessionCost">
+            </div>
+            <div>
+                <label for="sessionDate">Session Date:</label>
+                <input type="datetime-local" id="sessionDate" name="sessionDate" required>
+            </div>
+            <button type="submit" class="add-session-submit-btn">Add Session</button>
+        </form>
+    </div>
+</div>
+<script src="../scripts/session.js"></script>
+</body>
+</html>
