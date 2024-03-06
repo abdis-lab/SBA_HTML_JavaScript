@@ -92,7 +92,7 @@ body {
 }
 
 .add-session-btn:hover {
-    background-color: var(--gray-color);
+    background-color: black;
 }
 
 .modal {

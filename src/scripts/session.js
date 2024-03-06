@@ -8,10 +8,17 @@
     const sessionGrid = document.querySelector(".session-grid");
 
     addSessionBtn.addEventListener("click", function () {
+        document.getElementById("sessionCost").value = "";
+        document.getElementById("sessionName").value = "";
+        document.getElementById("sessionDate").value = "";
+        document.getElementById("sessionDetail").value = "";
         addSessionModal.style.display = "block";
     });
 
     function closeModal() {
+        document.getElementById("sessionCost").value = "";
+        document.getElementById("sessionName").value = "";
+        document.getElementById("sessionDate").value = "";
         addSessionModal.style.display = "none";
     }
 
@@ -29,6 +36,7 @@
         const sessionName = document.getElementById("sessionName").value;
         const sessionDate = document.getElementById("sessionDate").value;
         const sessionCost = document.getElementById("sessionCost").value;
+        const sessionDetail = document.getElementById("sessionDetail").value;
 
         const newSessionCard = document.createElement("div");
         newSessionCard.className = "session-card";
@@ -36,7 +44,7 @@
             <img src="../images/pexels-pixabay-358042.jpg" alt="Session Image">
             <div class="session-title">
                 <h1>${sessionName}</h1>
-                <p>Details about ${sessionName}.</p>
+                <p>${sessionDetail}.</p>
             </div>
             <div class="session-info">
                 <span class="session-date">${sessionDate}</span>
